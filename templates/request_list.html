@@ -1,0 +1,5 @@
+{% for request in requests %}
+    <p>{{ request.subject }} - {{ request.status }}</p>
+{% endfor %}
+<a href="{% url 'request_create' %}">Create Request</a>
+
